@@ -1,0 +1,107 @@
+!!!
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../assets/css/app.css")
+    link(rel="shortcut icon", href="/assets/ico/favicon.png")
+    title AirSonea
+
+  body.cbp-spmenu-push
+    #main-navbar.navbar.navbar-fixed-top.clearHeader
+      .container
+        a.navbar-brand(href="http://asthmasense.com")
+          img(src="../assets/img/airsonealogo.png", alt="airsonea")
+        button#showLeftPush.pull-right.menu-trigger
+          span.glyphicon.glyphicon-align-justify
+        ul.nav.navbar-nav.pull-right.hidden-xs
+          li
+            a(href="http://airsonea.com") AirSonea
+          li
+            a(href="http://asthmasense.com/cloud") AsthmaSense Cloud
+          li
+            a(href="http://blog.asthmasense.com") Blog
+    != yield
+
+    footer.airsoneabg
+      .container
+        .row
+          .col-sm-12
+            h2.center Kick Asthma in the Chest
+            p.center Sign up to receive information about asthma management and monitoring.
+            form#mc-embedded-subscribe-form.form-inline.validate.center(role="form", action="http://soundasthma.us7.list-manage.com/subscribe/post?u=214cede23e4a2c905e457618c&amp;id=cd2cb0fc26", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+              .form-group
+                input#mce-EMAIL.form-control(type="email", value="", name="EMAIL", class="required email", placeholder="Email")
+              input#mc-embedded-subscribe.btn.btn-primary(type="submit", value="Submit", name="subscribe") Submit
+        hr
+        .row
+          .col-sm-4.footer-menu.hidden-xs
+            nav
+              ul
+                li
+                  a(href="http://asthmasense.com/about") About Us
+                li
+                  a(href="http://asthmasense.com/faq") FAQ
+                li
+                  a(href="http://asthmasense.com/contact") Contact
+          .col-sm-4.footer-menu
+          
+          .col-sm-4.social-icons
+            h1 Connect
+            .links
+              a(href="http://facebook.com/SoundAsthma", target="_blank")
+                img(alt="facebook", src="../assets/img/fb.png")
+              a(href="http://twitter.com/SoundAsthma", target="_blank")
+                img(alt="twitter", src="../assets/img/tt.png")
+              a(href="http://pinterest.com/SoundAsthma", target="_blank")
+                img(alt="pinterest", src="../assets/img/pt.png")
+              a(href="http://instagram.com/SoundAsthma", target="_blank")
+                img(alt="instagram", src="../assets/img/ig.png")
+              a(href="http://youtube.com/SoundAsthma", target="_blank")
+                img(alt="youtube", src="../assets/img/yt.png")
+        .row
+          .col-sm-12
+            p.center The AirSonea product described is not available in the USA. The product and claims made have not yet been reviewed or cleared by the US FDA.	
+        .row.copyright
+          .col-sm-12
+            p.center &copy; 2013 iSonea Ltd. All Rights Reserved.
+    #emailModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Modal Title
+          form#mc-embedded-subscribe-form.validate(action="http://soundasthma.us7.list-manage.com/subscribe/post?u=214cede23e4a2c905e457618c&amp;id=20f02701c4", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+            .modal-body
+              .form-group
+                input#mce_Email.required.email.form-control(type="email", value="", name="EMAIL", placeholder="Email")
+              .form-group
+                input#mce-FNAME.form-control(type="text", value="", name="FNAME", placeholder="First Name")
+              .form-group
+                input#mce-LNAME.form-control(type="text", value="", name="LNAME", placeholder="Last Name")
+            .modal-footer
+              button.btn.btn-default(type="button", data-dismiss="modal") Close
+              input.mc-embedded-subscripe.btn.btn-primary(type="submit", value="Submit", data-dismiss="modal")
+    
+    #videoModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Learn
+          .modal-body
+            .embed-container
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/_req7C2jOeY?&rel=0&showinfo=0&modestbranding=1&controls=0&hd=1&autohide=1&color=white" frameborder="0" allowfullscreen></iframe>
+              
+    nav#cbp-spmenu.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+      a.visible-xs(href="http://airsonea.com") AirSonea
+      a.visible-xs(href="http://asthmasense.com/cloud") AsthmaSense Cloud
+      a.visible-xs(href="http://blog.asthmasense.com") Blog
+      a(href="http://asthmasense.com/about") About
+      a(href="http://asthmasense.com/new") News & Videos
+      a(href="http://asthmasense.com/technology") Technology
+      a(href="http://asthmasense.com/faq") FAQ
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+    script(src="../assets/js/bootstrap.min.js")
+    script(src="../assets/js/app.js")	

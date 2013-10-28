@@ -1,0 +1,129 @@
+!!!
+html.no-js
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/assets/css/app.css")
+    link(rel="shortcut icon", href="/assets/ico/favicon.png")
+    script(src="/assets/js/modernizr.custom.js")
+    script
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44230831-1', 'airsonea.com.au');
+      ga('send', 'pageview');
+
+    title AirSonea
+    
+  body.cbp-spmenu-push
+    script(type="text/javascript")
+      var axel = Math.random() + "";
+      var a = axel * 10000000000000;
+      document.write('<iframe src="http://4267750.fls.doubleclick.net/activityi;src=4267750;type=invmedia;cat=w6ogyouz;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+    noscript
+      <iframe src="http://4267750.fls.doubleclick.net/activityi;src=4267750;type=invmedia;cat=w6ogyouz;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+
+    #main-navbar.navbar.navbar-fixed-top.clearHeader
+      .container
+        a.navbar-brand(href="http://airsonea.com.au")
+          img(src="/assets/img/airsonealogo.png", alt="airsonea")
+        button#showLeftPush.pull-right.menu-trigger
+          span.glyphicon.glyphicon-align-justify
+        ul.nav.navbar-nav.pull-right.hidden-xs
+          li
+            a(href="http://airsonea.com.au") AirSonea
+          li
+            a(href="http://asthmasense.com.au/cloud") AsthmaSense Cloud
+          li
+            a(href="http://blog.asthmasense.com.au") Blog
+          li
+            a(href="https://shop.airsonea.com.au")
+              span.glyphicon.glyphicon-shopping-cart
+    != yield
+
+    footer.airsoneabg
+      .container
+        .row
+          .col-sm-12
+            h2.center Stay in touch
+            p.center Sign up to receive information about asthma management and monitoring.
+            form#mc-embedded-subscribe-form.form-foot.form-inline.validate.center(role="form", action="http://soundasthma.us7.list-manage.com/subscribe/post?u=214cede23e4a2c905e457618c&amp;id=cd2cb0fc26", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+              .form-group
+                input#mce-EMAIL.form-control(type="email", value="", name="EMAIL", class="required email", placeholder="Email")
+              input#mc-embedded-subscribe.btn.btn-primary(type="submit", value="Submit", name="subscribe") Submit
+        hr
+        .row
+          .col-sm-4.footer-menu.hidden-xs
+            nav
+              ul
+                li
+                  a(href="http://asthmasense.com.au/about") About Us
+                li
+                  a(href="http://airsonea.com.au/faq") FAQ
+                li
+                  a(href="http://asthmasense.com.au/contact") Contact
+          .col-sm-4.footer-menu
+          
+          .col-sm-4.social-icons
+            h1 Connect
+            .links
+              a(href="http://facebook.com/AsthmaSenseAU", target="_blank")
+                img(alt="facebook", src="/assets/img/fb.png")
+              a(href="http://twitter.com/AsthmaSenseAU", target="_blank")
+                img(alt="twitter", src="/assets/img/tt.png")
+              a(href="http://pinterest.com/SoundAsthma", target="_blank")
+                img(alt="pinterest", src="/assets/img/pt.png")
+              a(href="http://instagram.com/SoundAsthma", target="_blank")
+                img(alt="instagram", src="/assets/img/ig.png")
+              a(href="http://youtube.com/SoundAsthma", target="_blank")
+                img(alt="youtube", src="/assets/img/yt.png")
+
+        .row.copyright
+          .col-sm-12
+            p.center &copy; 2013 iSonea Ltd. All Rights Reserved.
+    #emailModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Stay Informed
+          form#mc-embedded-subscribe-form.validate(action="http://soundasthma.us7.list-manage.com/subscribe/post?u=214cede23e4a2c905e457618c&amp;id=20f02701c4", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+            .modal-body
+              p Sign up to learn more about AirSonea and when it will arrive in your market.
+              .form-group
+                input#mce_Email.required.email.form-control(type="email", value="", name="EMAIL", placeholder="Email")
+              .form-group
+                input#mce-FNAME.form-control(type="text", value="", name="FNAME", placeholder="First Name")
+              .form-group
+                input#mce-LNAME.form-control(type="text", value="", name="LNAME", placeholder="Last Name")
+            .modal-footer
+              button.btn.btn-default(type="button", data-dismiss="modal") Close
+              input.mc-embedded-subscripe.btn.btn-primary(type="submit", value="Submit", data-dismiss="modal")
+    
+    #videoModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Learn
+          .modal-body
+            .embed-container
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/_req7C2jOeY?&rel=0&showinfo=0&modestbranding=1&controls=0&hd=1&autohide=1&color=white" frameborder="0" allowfullscreen></iframe>
+              
+    nav#cbp-spmenu.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+      a.visible-xs(href="http://airsonea.com") AirSonea
+      a.visible-xs(href="http://asthmasense.com/cloud") AsthmaSense Cloud
+      a.visible-xs(href="http://blog.asthmasense.com") Blog
+      a(href="http://asthmasense.com.au/") Home
+      a(href="http://asthmasense.com.au/about") About
+      a(href="http://asthmasense.com.au/news") News
+      a(href="http://asthmasense.com.au#videos") Videos
+      a(href="http://asthmasense.com.au/technology") Technology
+      a(href="http://airsonea.com.au/faq") FAQ
+      a(href="http://asthmasense.com.au/contact") Contact
+      
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+    script(src="/assets/js/bootstrap.min.js")
+    script(src="/assets/js/app.js")	

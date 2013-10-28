@@ -1,0 +1,613 @@
+@white: #ffffff;
+@black: #000000;
+/* Lighter Green Was 7CAD37 */
+/* Global Styles */
+
+.circle-radius{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+.circle{
+	display: block;
+	background: @brand-primary;
+	margin-left: auto;
+	margin-right: auto;
+	.circle-radius;
+	height: 70px;
+	width: 70px;	
+}
+.center{
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-shadow{
+	text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+.green{
+	color: @white;
+	background: url(../img/green_blurred.jpg) top center no-repeat;
+	padding: 40px 0;
+	a{
+		color: @white;
+	}
+}
+
+/* ====================
+	 Base
+	 ==================== */
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Titillium Web', 'Helvetica Nueue', Helvetica, sans-serif;
+	margin-top: 0;
+	font-weight: 200;	
+}
+body{
+	font-weight: 300;
+}
+footer{
+	.form-group{
+		margin-right: 10px;
+	}
+}
+
+/* Navbar */
+.navbar{
+	background: rgba(255,255,255,.5);
+	border: none;
+	color: @black;
+	a{
+		color: @black;
+	}
+	li a{
+		color: @black;
+		font-size: 20px;
+		&:hover{
+			
+		}
+	}
+	.navbar-brand{
+		margin-top: 0;
+		padding: 5px 0;
+	}
+	.navbar-brand img{
+		height: 50px;
+		width: auto;
+	}
+	.expanded-menu{
+		padding: 12px 0 0 20px;
+	}
+}
+/* Push Nav */
+
+.menu-trigger{
+	color: @brand-primary;
+	background: none;
+	border: none;
+	margin-top: 5px;
+	font-size: 24px;
+}
+.cbp-spmenu {
+	background: @gray-darker;
+	position: fixed;
+	padding-top: 60px;
+	h3{
+		color: #afdefa;
+		font-size: 1.9em;
+		padding: 20px;
+		margin: 0;
+		font-weight: 300;
+		background: #0d77b6;
+	}
+	a{
+		display: block;
+		color: #fff;
+		font-size: 1.1em;
+		font-weight: 300;
+		&:hover{
+			background: @brand-primary;
+		}
+		&:hover{
+			background: @brand-primary;
+			color: @white;
+			text-decoration: none;
+		}		
+	}
+}
+
+ 
+/* Orientation-dependent styles for the content of the menu */
+ 
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	box-shadow: inset -4px 0 4px -2px rgba(0,0,0,.5);
+	a{
+		border-bottom: 1px solid @gray;
+		padding: 1em;
+	}
+}  
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+	left: -240px;
+	&.cbp-spmenu-open {
+		left: 0px;
+	}
+}
+
+
+ 
+/* Push classes applied to the body */
+ 
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+.cbp-spmenu-push-toright {
+    left: 240px;
+}
+ 
+/* Transitions */
+ 
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom{
+	margin-right: 0;
+}
+
+.darkHeader{
+	background: rgba(255,255,255,1);
+}
+/*  Head */
+.head{
+	margin-top: 60px;
+}
+.video-head{
+	background: url(https://www.numbrs.com/assets/intro-a1a4f48ca15a4b16e1b861b63756b464.jpg) top center no-repeat;
+	video{
+		display: block;
+		min-width: 100%;
+		min-height: auto;
+	}
+	source{
+		width: auto;
+	}
+}
+
+.buy{
+	font-size: 30px;
+	font-weight: 200;
+	color: @brand-primary;
+	&:hover{
+		color: @black;
+		text-decoration: none;
+	}
+}
+
+/* Get Started */
+.start{
+	margin-top: 0px;
+	padding-top: 80px;
+	background: @brand-primary;
+}
+.down-triangle { 
+   width: 100%; 
+   height: 0;
+   border-top: 200px solid @brand-primary;
+   border-left: 700px solid transparent; 
+   border-right: 700px solid transparent; 
+}
+
+.circles{
+	padding: 40px 0;
+	.col-sm-4{
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid @brand-primary;
+		&:last-child{
+			border: none;
+		}
+	}
+	.plus{
+		margin-top: 10px;;
+		display: block;
+		padding: 0;
+		line-height: .93;
+		color: @white;
+		background: @brand-primary;
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+		height: 20px;
+		width: 20px;
+		.circle-radius;
+		.center;
+		&:hover{
+			text-decoration: none;
+			background: @white;
+			color: @brand-primary;
+		}
+	}
+
+	h4{
+		margin-top: 15px;
+	}
+	p{
+		margin-top: 10px;
+	}
+	a{
+		color: @brand-primary;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.intro{
+	padding: 40px 0;
+}
+.modal-body, .modal-header{
+	color: @black;
+}
+
+/* Manage Section */
+.security{
+	.green;
+	padding: 40px 0 0;
+	h4{
+		margin-top: 15px;
+	}
+	.plus{
+		margin-top: 10px;
+		display: block;
+		padding: 0;
+		line-height: .93;
+		color: @brand-primary;
+		background: @white;
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+		height: 20px;
+		width: 20px;
+		.circle-radius;
+		.center;
+		&:hover{
+			text-decoration: none;
+			background: @brand-primary;
+			color: @white;
+		}
+	}
+}
+#feat-carousel{
+	min-height: 280px;
+}
+/* Video Section */
+.videos{
+	padding: 40px 0;
+	h4{
+		margin-bottom: 30px;
+	}
+}
+
+/* Social Section */
+.social-icons{
+	h1{
+		text-align: center;
+	}
+	.links{
+		.center;
+		a{
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+}
+.asthmagram{
+		font-size: 12px;
+		padding: 5px;
+		margin-bottom: 30px;
+		-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+		box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+		.profile-pic{
+			margin-top: 5px;
+			width: 25px;
+			height: auto;
+			padding-left: 5px;
+		}
+		.meta{
+			float: right;
+			margin-top: 5px;
+			padding-right: 5px;
+		}
+}
+
+/* Carousel */ 
+.carousel-control.left{
+	background: none;
+}
+.carousel-control.right{
+	background: none;
+}
+.item{
+	img{
+		width: 100%;
+		height: auto;
+		.center;
+	}
+	.appstore{
+		width: 100px; 
+		height: auto;
+}
+}
+.item{
+	min-width: 420px;
+	.left{
+		text-align: left;
+		background: rgba(0,0,0,.5);
+		padding: 20px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 90%;
+	}
+}
+.asthmasense-indicators{
+	position: absolute;
+	left: 0;
+	z-index: 15;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	top: 30px;
+	width: 100%;
+	text-align: center;
+}
+.alerts-slide,.reminders-slide,.track-slide,.wheeze-slide{
+	display: inline-block;
+	color: #fff;
+	height: 120px;
+	width: 160px;
+	margin-left: 20px;
+	margin-right: 20px;
+	img{
+		height: 50px;
+		width: 50px;
+	}
+}
+
+.appfeatures{
+	padding: 40px 0;
+	h4{
+		color: @brand-primary;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	p{
+		font-size: 12px;
+	}
+	.feat-item{
+		margin-bottom: 20px;
+	}
+	.right{
+		text-align: right;
+	}
+}
+
+.slide-icons{
+	img{
+		height: 92px;
+		width: 92px;	
+	}
+}
+.carousel-indicators li{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.input-sml{
+	width: 250px;
+}
+.yt-player{
+  height: 360px;
+	display: inline-block;
+	border: none;
+}
+.yt-channel-list{
+	height: 360px;
+	width: 48%;
+	overflow-x: scroll;
+	.yt-channel-list-inner{
+		width: 1500px;
+	}
+	.yt-channel-video{
+		display: inline-block;
+		img{
+			height: 180px;
+			width: auto;
+			padding: 5px;
+		}
+	}
+}
+.more-yt{
+	margin-top: 20px;
+}
+
+
+.cloudhead{
+	margin-top: 40px;
+	padding: 40px 0;
+	.copy{
+		margin-top: 0;
+		h1{
+			text-align: center;
+			font-size: 26px;
+		}
+	}
+}
+
+
+
+.fits{
+	padding: 40px 0;
+	background: url(../img/objects-cloud.jpg) no-repeat center bottom;
+	background-size: cover;
+	width: 100%;
+	min-height: 350px;
+	color: @white;
+	ul{
+		list-style: none;
+	}
+	h1{
+		margin-bottom: 4px;
+	}
+	.row{
+		margin-bottom: 20px; 
+	}
+	.fits-inner{
+		background: rgba(0,0,0,.6);
+		height: 100%;
+		width: 100%;
+		margin: -40px 0;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	h4{
+		font-size: 17px;
+	}
+	h5{
+		font-size: 15px;
+	}
+}
+
+.modal{
+	top: 10%;
+}
+
+/* Embeds */
+
+.embed-container{
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+		iframe, object, embed{
+    	position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+}
+
+.footer-menu{
+	ul{
+		list-style: none;
+		li{
+			margin-top: 10px;
+		}
+	}
+}
+.copyright{
+	margin-top: 15px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm){
+	.head{
+		margin-top: 0;
+	}
+	.item{
+		.left{
+			text-align: left;
+			background: rgba(0,0,0,.5);
+			padding: 20px;
+			bottom: 10%;
+			left: 15%;
+			right: 0;
+			width: 40%;
+		}
+	}
+	.circles{
+		.col-sm-4{
+			border-bottom: none;
+		}
+	}
+	.cloudhead{
+		.copy{
+			margin-top: 12%;
+			h1{
+				text-align: left;
+				font-size: 40px;
+			}
+		}
+	}
+	.social-icons{
+		h1{
+			text-align: left;
+		}
+		.links{
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+			a{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}	
+	}
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+	.fits{
+		padding: 40px 0;
+		background: url(../img/objects-cloud.jpg) no-repeat center bottom;
+		background-size: cover;
+		width: 100%;
+		min-height: 850px;
+		color: @white;
+		ul{
+			list-style: none;
+		}
+		h1{
+			margin-bottom: 4px;
+		}
+		.row{
+			margin-bottom: 20px; 
+		}
+		.fits-inner{
+			background: none;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		h4{
+			font-size: 17px;
+		}
+		h5{
+			font-size: 15px;
+		}
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) {
+	.fits{
+		.fits-inner{
+		background: none;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+}

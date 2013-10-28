@@ -1,0 +1,153 @@
+!!!
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../assets/css/app.css")
+    link(rel="shortcut icon", href="/assets/ico/favicon.png")
+    title AirSonea
+    script
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44230831-1', 'airsonea.com.au');
+      ga('send', 'pageview')
+
+  body.cbp-spmenu-push.getstarted
+    #main-navbar.navbar.navbar-fixed-top
+      .container
+        a.navbar-brand(href="http://asthmasense.com")
+          img(src="../assets/img/airsonealogo.png", alt="airsonea")
+        button#showLeftPush.pull-right.menu-trigger.hidden
+          span.glyphicon.glyphicon-align-justify
+        ul.nav.navbar-nav.pull-right.hidden-xs
+          li
+            a(href="http://airsonea.com.au") AirSonea
+          li
+            a(href="http://asthmasense.com.au/cloud") AsthmaSense Cloud
+          li
+            a(href="http://blog.asthmasense.com.au") Blog
+    != yield
+
+    footer.airsoneabg.footerstarted.bs-footer
+      .container
+        .row
+          .col-sm-12
+            h2.center Kick Asthma in the Chest
+            p.center Sign up to receive information about asthma management and monitoring.
+            form#mc-embedded-subscribe-form.form-inline.validate.center(role="form", action="http://soundasthma.us7.list-manage.com/subscribe/post?u=214cede23e4a2c905e457618c&amp;id=cd2cb0fc26", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+              .form-group
+                input#mce-EMAIL.form-control(type="email", value="", name="EMAIL", class="required email", placeholder="Email")
+              input#mc-embedded-subscribe.btn.btn-primary(type="submit", value="Submit", name="subscribe") Submit
+        hr
+        .row
+          .col-sm-4.footer-menu.hidden-xs
+            nav
+              ul
+                li
+                  a(href="http://asthmasense.com.au/about") About Us
+                li
+                  a(href="http://airsonea.com.au/faq") FAQ
+                li
+                  a(href="http://asthmasense.com.au/contact") Contact
+          .col-sm-4.footer-menu.center
+            a.btn.btn-primary.btn-lg(href="#registerModal", data-toggle="modal") Register Your Device
+          .col-sm-4.social-icons
+            h1 Connect
+            .links
+              a(href="http://facebook.com/SoundAsthma", target="_blank")
+                img(alt="facebook", src="../assets/img/fb.png")
+              a(href="http://twitter.com/SoundAsthma", target="_blank")
+                img(alt="twitter", src="../assets/img/tt.png")
+              a(href="http://pinterest.com/SoundAsthma", target="_blank")
+                img(alt="pinterest", src="../assets/img/pt.png")
+              a(href="http://instagram.com/SoundAsthma", target="_blank")
+                img(alt="instagram", src="../assets/img/ig.png")
+              a(href="http://youtube.com/SoundAsthma", target="_blank")
+                img(alt="youtube", src="../assets/img/yt.png")
+        .row
+          .col-sm-12
+            p.center The AirSonea product described is not available in the USA. The product and claims made have not yet been reviewed or cleared by the US FDA.
+        .row.copyright
+          .col-sm-12
+            p.center &copy; 2013 iSonea Ltd. All Rights Reserved.
+
+    #twoappsModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Why 2 Apps?
+          .modal-body
+            p The AirSonea app is used to measure your WheezeRATE<span class="breg">&trade;</span>, while AsthmaSense<span class="breg">&reg;</span> Cloud app records symptoms and readings to make sharing information with your family or physician easier.
+              
+    #registerModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Register
+          form(action="http://soundasthma.us7.list-manage.com/subscribe/post", method="POST")
+            .modal-body
+              input(type="hidden", name="u", value="214cede23e4a2c905e457618c")
+              input(type="hidden", name="id", value="2778f985e8")
+              label Name
+              .form-group
+                input#MERGE1.form-control.fname(type="text", name="MERGE1", value="", placeholder="First Name")
+                input#MERGE2.form-control.lname(type="text", name="MERGE2", value="", placeholder="Last Name")
+              label Email Address
+              .form-group 
+                input#MERGE0.form-control(type="email", autocapitalize="off", autocorrect="off", name="MERGE0", size="25", value="", placeholder="Email Address")
+              label Phone Number
+              .form-group
+                input#MERGE3-area.form-control.phonenum(type="text", pattern="[0-9]*", name="MERGE3[area]", maxlength="3", size="3", value="", placeholder="(XXX)")
+                input#MERGE3-detail1.form-control.phonenum(type="text", pattern="[0-9]*", name="MERGE3[detail1]", maxlength="3", size="3", value="", placeholder="XXX")
+                input#MERGE3-detail2.form-control.phonenum(type="text", pattern="[0-9]*", name="MERGE3[detail2]", maxlength="4", size="4", value="", placeholder="XXXX")
+              label Address
+              .form-group
+                input#MERGE4-addr1.form-control(type="text", name="MERGE4[addr1]", maxlength="70", value="", placeholder="Street Address")
+                input#MERGE4-addr2.form-control(type="text", name="MERGE4[addr2]", maxlength="70", value="", placeholder="Apt/Suite")
+                input#MERGE4-city.form-control.city(type="text", name="MERGE4[city]", maxlength="40", value="", placeholder="City")
+                input#MERGE4-state.form-control.state(type="text", name="MERGE4[state]", maxlength="20", value="", placeholder="State/Province")
+                input#MERGE4-zip.form-control.zip(type="text", name="MERGE4[zip]", maxlength="10", value="", placeholder="Postal / Zip Code")				
+                select#MERGE4-country.form-control(name="MERGE4[country]") 
+                  option(value="164") USA
+                  option(value='8', selected='selected') Australia			
+              .form-group
+                label Gender
+                select#MERGE5.form-control(name="MERGE5")
+                  option(value="Male") Male
+                  option(value="Female") Female
+                  option(value="Decline to answer") Decline to answer
+              label Date of Birth
+              .form-group
+                input#MERGE7-month.form-control.dob(type="text", pattern="[0-9]*", name="MERGE7[month]", maxlength="2", value="",  placeholder="MM")
+                input#MERGE7-day.form-control.dob(type="text", pattern="[0-9]*", name="MERGE7[day]", maxlength="2", value="",  placeholder="DD")
+                input#MERGE7-year.form-control.dob(type="text", pattern="[0-9]*", name="MERGE7[year]", maxlength="4", value="", placeholder="YYYY")
+              label Serial Number	
+              .form-group
+                input#MERGE6.form-control(type="text", name="MERGE6", size="25", value="", placeholder="Serial Number")
+              label Date of Purchase
+              .form-group
+                input#MERGE8-month.form-control.dop(type="text", pattern="[0-9]*", name="MERGE8[month]", maxlength="2", value="", placeholder="MM")
+                input#MERGE8-day.form-control.dop(type="text", pattern="[0-9]*", name="MERGE8[day]", maxlength="2", value="", placeholder="DD")
+                input#MERGE8-year.form-control.dop(type="text", pattern="[0-9]*", name="MERGE8[year]", maxlength="4", value="",  placeholder="YYYY")
+
+            .modal-footer
+              input.btn.btn-primary(type="submit", name="submit", value="Register")	
+          
+    nav#cbp-spmenu.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+      a.visible-xs(href="http://airsonea.com.au") AirSonea
+      a.visible-xs(href="http://asthmasense.com.au/cloud") AsthmaSense Cloud
+      a.visible-xs(href="http://blog.asthmasense.com.au") Blog
+      a(href="http://asthmasense.com.au/about") About
+      a(href="http://asthmasense.com.au/new") News & Videos
+      a(href="http://asthmasense.com.au/technology") Technology
+      a(href="http://airsonea.com.au/faq") FAQ
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+    script(src="../assets/js/bootstrap.min.js")
+    script(src="../assets/js/app.js")
+    script(src="https://trychec.com/js/embed.js")	
